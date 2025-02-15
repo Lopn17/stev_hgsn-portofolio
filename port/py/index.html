@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Displayer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <p>Copy the Python code below and run the code in below website</p>
+        <p>note: "Rerun the code to try more syntax""</p>
+        <a href="https://www.online-python.com/" target="_blank"><button>Run</button></a>
+    </div>
+    <div id="text-container">
+        <button id="copy-button">Copy the Code</button>
+        <p>Chatbot.py</p>
+        <pre class="py">
+#CHAT_BOT
+# Greetings
+lo17 = "_Chatbot_:"
+print("LO=-=-=-=-=-=_ChatBot_=-=-=-=-=-=17\n")
+print(lo17, "Hello! I'm your ChatBot. How can I help you today?\n")
+print(lo17, "Just Reminder, My Developer Need To Do Some Update but too lazy")
+print("=== tHE Next Udate ==\n+ Percent Calculator (search tutorial from yt)\n+ LopN Compiler (GUI)\n+ Calculator menit ke derjaat da\n+update calculator\n")
+prompt_input = input("=You=: ")
+prompt = prompt_input.lower()
+print(" ")
+
+
+# Database
+  # Stoicism
+Saran_Stoic_Ind = "fokuslah pada apa yang ada dalam kendalimu saat ini,\nberusaha untuk bertindak dengan bijaksana dan berusaha keras,\nsambil menerima bahwa hasil akhir tidak sepenuhnya tergantung padamu."
+Cemas_Stoic_ind = "Jangan biarkan kecemasan terhadap masa depan menghalangi kemampuanmu untuk menghargai momen yang ada di hadapanmu dan melakukan yang terbaik dalam situasi yang ada"
+Stoic_Advice_Eng = "focus on what is within your control at the moment, \nstrive to act wisely and strive hard, \nwhile accepting that the end result is not entirely up to you."
+Anxiety_Stoicism_Eng = "Don't let anxiety about the future get in the way of your ability to appreciate the moment that's in front of you and make the best of the situation at hand"
+
+  
+  # Focus
+
+""" Stoicism """
+# Stoic Ind Lang
+if prompt == "nasihat stoic" or prompt == "saran stoik" or prompt == "saran stoic" or prompt == "berikan saya saran stoik":
+    print(f"{lo17} Berikut Saran stoic yang bisa saya berikan:\n{Saran_Stoic_Ind}\n")
+
+elif prompt == "berikan saya nasihat stoik" or prompt == "berikan saya nasihat stoikisme" or prompt == "saran stoik":
+    print(f"{lo17} Berikut Saran Stoic yang bisa saya berikan:\n{Saran_Stoic_Ind}\n")
+
+elif prompt == "cemas dalam stoic" or prompt == "saran mengenai kecemasan" or prompt == "cemas stoik":
+    print(f"{lo17} Berikut Saran Mengenai kecemasan dalam stoic yang bisa saya berikan:\n{Cemas_Stoic_ind}\n")
+
+# Stoic Eng Lang
+elif prompt == "give me a stoic advice" or prompt == "give a stoic advice" or prompt == "give me stoic advice":
+    print(f"{lo17} Here's The Stoic Advice For You:\n{Stoic_Advice_Eng}\n")
+
+elif prompt == "stoic advice" or prompt == "stoicism advice":
+    print(f"{lo17} Here's The Stoic Advice For You:\n{Stoic_Advice_Eng}\n")
+
+# Math
+  #eng lang
+elif prompt == "did you can do a calculation?" or prompt == "do you can calculate?"  or prompt == "did you can do a calculation" or prompt == "do you can calculate":
+    print(lo17, "Yes I do, I Can Do a simple math calculation like: Addition, Subtraction, Multiplication, and Divide. Tell Me If You Need a help, :)")
+
+elif prompt == "did you can calculation?" or prompt == "do you can calculation?"  or prompt == "are u can calculate" or prompt == "are you can calculate":
+    print(lo17, "Yes I do, I Can Do a simple math calculation like: Addition, Subtraction, Multiplication, and Divide. Tell Me If You Need a help, :)")
+
+  #addition
+elif prompt == "math addition" or prompt == "math +" or prompt == "/+" or prompt == "add" or prompt == "addition":
+    a = float(input("_Chatbot_: Input the 1st number: "))
+    b = float(input("_Chatbot_: Input the 2nd number: "))
+    c = a + b
+    print(f"{lo17} the addition result from {a}+{b} = {c}")
+  #subtraction
+elif prompt == "math subtraction" or prompt == "math -" or prompt == "/-" or prompt == "sub" or prompt == "subtraction":
+    a = float(input("_Chatbot_: Input the 1st number: "))
+    b = float(input("_Chatbot_: Input the 2nd number: "))
+    c = a - b
+    print(f"{lo17} the subtraction result from {a}-{b} = {c}")
+  #multiplication
+elif prompt == "math multiplication" or prompt == "math *" or prompt == "math x" or prompt == "/*" or prompt == "/x" or prompt == "mult" or prompt == "multiplication":
+    a = float(input("_Chatbot_: Input the 1st number: "))
+    b = float(input("_Chatbot_: Input the 2nd number: "))
+    c = a * b
+    print(f"{lo17} the multiplication result from {a}*{b} = {c}")
+  #Divide type 1
+elif prompt == "math divide" or prompt == "math :" or prompt == "math /" or prompt == "//" or prompt == "/:" or prompt == "div" or prompt == "divide":
+    a = float(input("_Chatbot_: Input the 1st number: "))
+    b = float(input("_Chatbot_: Input the 2nd number: "))
+    c = a / b
+    print(f"{lo17} the divide result from {a}/{b} = {c}")
+  #Divide type 2
+elif prompt == "math divide2" or prompt == "math ::" or prompt == "math //" or prompt == "///" or prompt == "/::" or prompt == "div2" or prompt == "divide2":
+    a = float(input("_Chatbot_: Input the 1st number: "))
+    b = float(input("_Chatbot_: Input the 2nd number: "))
+    c = a // b
+    print(f"{lo17} the divide result from {a}//{b} = {c}")
+
+#Shape
+elif prompt == "make a circle" or prompt == "circle":
+    import turtle
+    t = turtle.Turtle()
+    a = float(input("_Chatbot_: Input Circle Radius "))
+    t.circle(a)
+    import tkinter
+    tkinter.mainloop()
+
+# random number generator
+elif prompt == "random number" or prompt == "random num" or prompt == "r":
+    import random
+    a = float(input("_Chatbot_: range number from "))
+    b = float(input("_Chatbot_: range number to "))
+    random_number = random.randint(a, b)
+    print(lo17, random_number)
+
+#random Picker
+elif prompt == "picker":
+    import random
+    responses = [
+        "FT","MCB","RU"
+        ]
+    pick = random.choice(responses)
+    print(lo17,pick)
+
+#
+    
+    
+
+# Game Tebak angka
+elif prompt == "tebak angka game" or prompt == "tebak angka" or prompt == "guess number game" or prompt == "guess game" or prompt == "number guess":
+    import random
+    # Inisialisasi variabel
+    a = int(input("_Chatbot_: range tebakan dari "))
+    b = int(input("_Chatbot_: range tebakan sampai "))
+    angka_rahasia = random.randint(a,b) # random.Radint/random int from 1 - 100
+    tebakan = 0
+   
+    # Mulai permainan
+    while tebakan != angka_rahasia:
+        # Minta input dari pengguna
+        print(f"{lo17} Tebak angka ({a}-{b})")
+        tebakan = int(input("=You=: "))
+        # Cek apakah tebakan benar
+        if tebakan > angka_rahasia:
+            print(lo17, "Tebakan terlalu besar.\n")
+            tebakan = tebakan - tebakan
+        elif tebakan < angka_rahasia:
+            print(lo17, "Tebakan terlalu kecil.\n")
+            tebakan = tebakan - tebakan
+        else:
+            print(lo17, "Selamat! Tebakan Anda benar.")
+
+elif prompt == "number guess bot" or prompt == "bot guesser":
+    #bot guesser
+    import random
+    # Inisialisasi variabel
+    a = int(input("_Chatbot_: guess range from "))
+    b = int(input("_Chatbot_: guess range to "))
+    angka_rahasia = int(input("input your secret number : "))
+
+    random_guess = random.randint(a, b)
+
+    print(f"{lo17}Use 'a' if the guess number too small than secret number")
+    print(f"{lo17}Use 'b' if the guess number too big than secret number\n")
+
+    while random_guess != angka_rahasia:
+        print(f"{lo17} is your secret number is {random_guess}?")
+        input_clue = input("Input Clue: ") 
+        input_Clue = input_clue.lower()
+        if input_Clue == "kekecilan" or input_Clue == "a" or input_Clue == "too small":
+            a = random_guess + 1
+            random_guess = random.randint(a, b) # menebak ulang
+            print(lo17,"range guess", a,"-",b,"\n")
+        elif input_Clue == "kebesaran" or input_Clue == "b" or input_Clue == "too big":
+            b = random_guess - 1
+            random_guess = random.randint(a, b) # menebak ulang
+            print(lo17,"range guess", a,"-",b,"\n")
+        elif input_Clue == "reset":
+            print(lo17,"reset")
+            break
+        elif input_Clue == "benar" or input_Clue == "right" or input_Clue == "yes":
+            print(lo17,"So Your Secret number is", random_guess)
+            print(lo17,"good job\n")
+            break
+        else:
+            print(lo17, "sorry maybe your clue was invalid, try again.")
+    else:
+        print(lo17,"So Your Secret number is", angka_rahasia)
+        print(lo17,"good job\n")
+
+# CALCULATOR BY https://www.programiz.com/python-programming/examples/calculator#google_vignette
+
+elif prompt == "math2":
+    # This function adds two numbers
+    def add(x, y):
+        return x + y
+
+    # This function subtracts two numbers
+    def subtract(x, y):
+        return x - y
+
+    # This function multiplies two numbers
+    def multiply(x, y):
+        return x * y
+
+    # This function divides two numbers
+    def divide(x, y):
+        return x / y
+
+    print("Select operation.")
+    print("1.Add")
+    print("2.Subtract")
+    print("3.Multiply")
+    print("4.Divide")
+
+    while True:
+        # take input from the user
+        choice = input("Enter choice(1/2/3/4): ")
+
+        # check if choice is one of the four options
+        if choice in ('1', '2', '3', '4'):
+            try:
+                num1 = float(input("Enter first number: "))
+                num2 = float(input("Enter second number: "))
+            except ValueError:
+                print("Invalid input. Please enter a number.")
+                continue
+
+            if choice == '1':
+                print(num1, "+", num2, "=", add(num1, num2))
+
+            elif choice == '2':
+                print(num1, "-", num2, "=", subtract(num1, num2))
+
+            elif choice == '3':
+                print(num1, "*", num2, "=", multiply(num1, num2))
+
+            elif choice == '4':
+                print(num1, "/", num2, "=", divide(num1, num2))
+        
+            # check if user wants another calculation
+            # break the while loop if answer is no
+            next_calculation = input("Let's do next calculation? (yes/no): ")
+            if next_calculation == "no":
+                break
+        else:
+            print("Invalid Input")
+
+
+
+
+# CALCULATOR MOD
+elif prompt == "cal" or prompt == "calculate" or prompt == "calculator" or prompt == "cals":
+    print("-+=+-:Calculator:-+=+-")
+    i = 0
+    while i != 100:
+        print("Type 'quit' in operations, if you want to exit.\n")
+        i += 1
+        a = float(input("_Chatbot_: 1st number: "))
+        b = input("_Chatbot_: operations: ")
+        c = float(input("_Chatbot_: 2nd number: "))
+        
+        #Addition
+        if b == "+" or b == "plus" or b == "p" or b == "P":
+            d = a + c
+            print(f"{lo17} {a} + {c} = {d}\n")
+        
+        #Subtraction
+        elif b == "-" or b == "min" or b == "m" or b == "M":
+            d = a - c
+            print(f"{lo17} {a} - {c} = {d}\n")
+        
+        #Multiplication
+        elif b == "x" or b == "*" or b == "X":
+            d = a * c
+            print(f"{lo17} {a} x {c} = {d}\n")
+        
+        #Divide type 1
+        elif b == ":" or b == "/" or b == ";": 
+            d = a / c
+            print(f"{lo17} {a} / {c} = {d}\n")
+        
+        #Divide type 2
+        elif b == "::" or b == "//" or b == ";;":
+            d = a // c
+            print(f"{lo17} {a} // {c} = {d}\n")
+        
+        #Break
+        elif b == "quit" or b == "QUIT" or b == "Quit":
+            print("Calculator Mode Disabled")
+            break
+        else:
+            print("     ^^Input Invalid^^")
+    else:
+        print("Calculator Mode Usage Limit Already Reached")
+
+
+# Grade Calculator
+elif prompt == "grade" or prompt == "grade cal":
+    jumlah_Soal = int(input("_Chatbot_: Questions Total : "))
+    jumlah_benar = int(input("_Chatbot_: True Answers : "))
+    Max_Grade = int(input("_Chatbot_: Max Grade : "))
+    Pass_Grade = int(input("_Chatbot_: Pass Grade : "))
+    Grade = jumlah_benar / jumlah_Soal * Max_Grade
+    if Pass_Grade > Grade:
+        print(lo17, "You didn't pass.")
+    elif Pass_Grade <= Grade:
+        print(lo17, "You Passed.")
+    print(f"{lo17} \nYour Grade : {Grade}\n")
+    prompt_input
+    # f = print(f"apsdsdp{asd}")
+    # This code cant Display interger Value
+
+# Segitiga Siku Siku
+    # Pythagoras (Sisi Miring)
+elif prompt == "hypotenuse" or prompt == "simi" or prompt == "sisi miring" or prompt == "phytagoras" or prompt == "pytagoras":
+    import math
+    alas = float(input("_Chatbot_: Input Alas : "))
+    tinggi = float(input("_Chatbot_: input Tinggi : "))
+    sisi_miring_power = pow(alas,2) + pow(tinggi,2)
+    sisi_miring = math.sqrt(sisi_miring_power)
+    print(f"{lo17} Sisi miring =\n{alas}^2 + {tinggi}^2 = {pow(alas,2)} + {pow(tinggi,2)}")
+    print(f"{lo17} Sisi miring = √{sisi_miring_power}")
+    print(lo17, "Sisi miring =",sisi_miring)
+
+    #sISI aLAS
+elif prompt == "segitiga siku siku alas" or prompt == "segiku alas" or prompt == "segiku samping":
+    import math
+    tinggi = float(input("_Chatbot_: Input Tinggi : "))
+    sisi_miring = float(input("_Chatbot_: Input Sisi Miring : "))
+    alas_power =  pow(sisi_miring,2) - pow(tinggi,2)
+    alas = math.sqrt(alas_power)
+    print(f"alas =\n{sisi_miring}^2 - {tinggi}^2 = {alas_power}")
+    print(f"{lo17} Alas = √{alas_power}")
+    print(lo17, "Alas =",alas)
+
+    #Sisi Tegak
+elif prompt == "segitiga siku siku tinggi" or prompt == "segiku tinggi" or prompt == "segiku depan":
+    import math
+    alas = float(input("_Chatbot_: Input Alas : "))
+    sisi_miring = float(input("_Chatbot_: Input Sisi Miring : "))
+    tinggi_power =  pow(sisi_miring,2) - pow(alas,2)
+    tinggi = math.sqrt(tinggi_power)
+    print(f"alas =\n{sisi_miring}^2 - {alas}^2 = {tinggi_power}")
+    print(f"{lo17} Alas = √{tinggi_power}")
+    print(lo17, "tinggi =",tinggi)
+
+    #
+
+elif prompt == "percent" or prompt == "rate":
+    print(lo17, "What's your choice?\na. 10% dari 100 = 10\nb. Berapa % dari 20/100 = 20%\nc. 10 adalah 10% dari? 100\nd. perubahan dari 10 ke 20 = 100%")
+    inp = input("Chatbot: input pilihan: ")
+    i = inp.lower()
+    if i == "a":
+        print("\nA. a% dari b = c")
+        a = float(input("_Chatbot_: a: "))
+        b = float(input("_Chatbot_: b: "))
+        c = (a/100) * b
+        print(lo17, "c =", int(c))
+        print(lo17, "c =", c)
+    elif i == "b":
+        print("\nB. Berapa % dari a/b? c%")
+        a = float(input("_Chatbot_: a: "))
+        b = float(input("_Chatbot_: b: "))
+        c = (a/b) * 100
+        print(lo17, "c =", int(c), "%")
+        print(lo17, "c =",c, "%")
+    elif i == "c":
+        print("\nC. a adalah b% dari? c")
+        a = float(input("_Chatbot_: a: "))
+        b = float(input("_Chatbot_: b: "))
+        c = (a/b)*100 
+        print(lo17, "c =", int(c))
+        print(lo17, "c =", c)
+    elif i == "d":
+        print("\nD. perubahan presentase dari a ke b = c% ")
+        a = float(input("_Chatbot_: a: "))
+        b = float(input("_Chatbot_: b: "))
+        c = ((b-a)/a) * 100
+        print(lo17, "c =", int(c))
+        print(lo17, "c =", c)
+
+# Baris Aritmatika
+    # Suku Ke n,
+    # Un = a+(n-1).b
+elif prompt == "suku ke n" or prompt == "suku n" or prompt == "un":
+    a = int(input("_Chatbot_: Suku Pertama: ")) 
+    n = int(input("_Chatbot_: Suku Ke n : "))
+    b = int(input("_Chatbot_: Beda Selisihnya : "))
+    Un = a+(n-1)*b
+    print(lo17, Un)
+
+
+    #AKAR
+elif prompt == "akar" or prompt == "square root" or prompt == "sqrt":
+    import math
+    x = float(input("_Chatbot_: float sqrt : "))
+    a = math.sqrt(x)
+    print(lo17, a)
+
+elif prompt == "half" or prompt == "1/2" or prompt == "0,5" or prompt == "0.5":
+    half = 0.5
+    input = float(input("_Chatbot_: input number: "))
+    print(lo17, "half =", half * input)
+
+#power (pangkat)
+elif prompt == "pangkat" or prompt == "pow" or prompt == "power":
+    import math
+    x = float(input("_Chatbot_: input : "))
+    z = int(input("_Chatbot_: power : "))
+    a = math.pow(x,z)
+    print(lo17, a)
+
+#rectangle
+elif prompt == "rectangle" or prompt == "persegi panjang" or prompt == "pp":
+    # Rectangle Math Problem
+    rectangle_length = float(input("_Chatbot_: input length : "))
+    rectangle_width = float(input("_Chatbot_: input width : "))
+    rectangle_area = rectangle_length * rectangle_width
+    rectangle_perimeter = 2 * (rectangle_length + rectangle_width)
+    # Rectangle Perimeter
+    print("\n#Rectangle Perimeters Math Problem")
+    print(f"{lo17} Find the rectangle perimeter.\n{lo17} Length = {rectangle_length}, width = {rectangle_width}.")
+    print(f"{lo17} Formula = 2(L + W).\n{lo17} solution: 2 * ({rectangle_length} + {rectangle_width})")
+    print(lo17, "The result is =", rectangle_perimeter, "\n")
+    # Rectangle Area
+    print("#Rectangle Area Math Problem")
+    print(f"{lo17} Find the rectangle area.\n{lo17} Length = {rectangle_length}, width = {rectangle_width}.")
+    print(f"{lo17} Formula = L * W.\n{lo17} solution: {rectangle_length} * {rectangle_width}")
+    print(f"{lo17} The result is =, {rectangle_area}.\n")
+
+# Tan 
+elif prompt == "tan":
+    import math
+    x = int(input("_Chatbot_: Input Tan Degrees: "))
+    tan = math.tan(x)
+    print(lo17, tan)
+
+
+# Coding
+    # Hello World Code Python
+elif prompt == "python code Hello world" or prompt == "hello world python code" or prompt == "python hello world code":
+    print(f'{lo17} Here is the Python Code to display "Hello world"\n ---> print("Hello World")')
+
+elif prompt == "hello world code python" or prompt == "code python hello world":
+    print(f'{lo17} Here is the Python Code to display "Hello world"\n ---> print("Hello World")')
+
+    #Programming Compiler
+elif prompt == "prog" or prompt == "programming"or prompt == "prg":
+    # input
+    print('<}+-=->!Programming_Mode!<-=-+{>')
+    print("input programming languange")
+    cmd = input(":> ")
+    if cmd == "lopn": 
+        print("<^!LopN!^> <!ver: 0.1.1beta!>")
+        print("<!update 0.1.1!>\n+new function added !lop! for import external package")
+        print("+lop package .shape ;circle")
+        print("-'class>' function deleted")
+        i = 0
+        while i != 100:
+            i += 1
+            print("\n         <^v^>")
+            loprompt = input()
+            if loprompt == "!quit":
+                print("Programming mode disabled")
+                break
+            elif loprompt == "!display;":
+                display = input("<> ")
+                print("\n==========TERMINAL==========")
+                print(display)
+            elif loprompt == "!display;cal":
+                cals = input(" :> ")
+                if cals == "int":
+                    cal = int(input("<int> "))
+                    operation = input("<> ")
+                    cal2 = int(input())
+            elif loprompt == "!display;lop":
+                lop = input("<^v^> lop.")
+                if lop == "shape":
+                    shape = input("!shape;")
+                    if shape == "circle":
+                        import turtle
+                        t = turtle.Turtle()
+                        rads = float(input("!rad;"))
+                        t.circle(rads)
+                        n = input("lop.")
+                        if n == "n":
+                            a = float(input("speed>"))
+                            t.circle(rads)
+                            t.speed(a)
+                        elif n == "N":
+                            break
+                        else:
+                            print("<><><-Invalid Syntax-><><>")
+                elif lop == "n" or "N":
+                    print("")    
+                else: 
+                    print("<><><-Invalid Syntax-><><>")
+            else:
+                print("<><><-Invalid Syntax-><><>")
+        else:
+            print("Programing Mode Usage Limit Already Reached")
+    else:
+        print("Command invalid")
+
+
+# Greetings
+ # Eng Lang
+elif prompt == "hello" or prompt == "hey" or prompt == "hi":
+    print(lo17, "Hi there!")
+elif prompt == "how are you" or prompt == "how r u" or prompt == "whatsupp":
+    print(lo17, "I'm just a computer program, but I'm here to help!")
+elif prompt == "bye":
+    print(lo17, "Goodbye! Have a great day!")
+elif prompt == "thank you very much" or prompt == "thanks" or prompt == "thank you" or prompt == "thx":
+    print(lo17, "Your Welcome!, Glad Can Helping You.")
+ # Ind Lang
+elif prompt == "halo" or prompt == "hallo":
+    print(lo17, "Halo Juga!")
+elif prompt == "apa kabar":
+    print(lo17, "Saya Hanya Program Komputer, Namun saya siap membantumu!")
+elif prompt == "sampai jumpa" or prompt == "dah" or prompt == "selamat tinggal":
+    print(lo17, "Sampai Jumpa Nanti! Terima Kasih.")
+elif prompt == "terima kasih":
+    print(lo17, "Sama Sama, Senang bisa membantumu.")
+elif prompt == "Makasih" or prompt == "makasih banyak" or prompt == "makasih":
+    print(lo17, "Sama Sama, Senang bisa membantumu.")
+
+# Feature
+elif prompt == "capital" or prompt == "capt" or prompt == "capitalize":
+    capt = input("_Chatbot_: input capt: ")
+    print(lo17, capt.capitalize())
+
+elif prompt == "lower" or prompt == "low" or prompt == "lowering":
+    low = input("_Chatbot_: input low: ")
+    print(lo17, low.lower())
+
+elif prompt == "reversed" or prompt == "rev" or prompt == "reverse":
+    print(lo17, "This a function to reversed any word.")
+    reverse = input("_Chatbot_: input rev: ")
+    rev = reverse[::-1]
+    print(lo17, rev)
+
+#Rock paper scissor
+elif prompt == "rps":
+    i = 0
+    while i != 100:
+        import random
+        rps = [
+            "Rock","Paper","Sccissor"
+        ]
+        print("\nRock = R , Paper = P , Sccissors = S\n_Chatbot_: Rock Paper or Sccissor? ")
+
+        input_rps = input("=You=: ")
+        Rpsbot = random.choice(rps)
+        print(lo17, Rpsbot)
+        i += 1
+        # bot win
+        if Rpsbot == rps[0] and input_rps == "s":
+            print("Bot Win")
+    
+        elif Rpsbot == rps[1] and input_rps == "r":
+            print("Bot Win")
+
+        elif Rpsbot == rps[2] and input_rps == "p":
+            print("Bot Win")
+
+        #Bot Lose
+        elif Rpsbot == rps[0] and input_rps == "p":
+            print("You Win")
+
+        elif Rpsbot == rps[1] and input_rps == "s":
+            print("You Win")
+
+        elif Rpsbot == rps[2] and input_rps == "r":
+            print("You Win")
+
+        #Tie
+        elif Rpsbot == rps[1] and input_rps == "r":
+            print("Tie")
+
+        elif Rpsbot == rps[2] and input_rps == "p":
+            print("Tie")
+
+        elif Rpsbot == rps[3] and input_rps == "s":
+            print("Tie")
+
+        else:
+            print("Your Input Was Invalid")
+
+    else:
+        print("rps mode max")
+
+elif prompt == "nested loop" or prompt == "nestloop":
+    rows = int(input("_Chatbot_: Input Rows/Height : "))
+    colloums = int(input("_Chatbot_: Input Colloums/Width : "))
+    symbol = input("_Chatbot_: Input Symbol : ")
+    print("")
+    for a in range(rows):
+        for b in range(colloums):
+            print(symbol, end="")
+        print("")
+    print("")
+
+else:
+    print(lo17, "Sorry, Im not sure how to respond that.") 
+    print(" ")
+        </pre>
+
+    </div>
+    <
+    <script src="script.js"></script>
+</body>
+</html>

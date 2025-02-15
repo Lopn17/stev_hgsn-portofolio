@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #d7d6d6;
+}
+
+.container{
+    position: relative;
+}
+
+.ball{
+    z-index: 2;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to top, rgb(98, 2, 2) 1%, rgba(242,3,3,1) 65%);
+    border-radius: 50%;
+}
+
+.shadow{
+    z-index: 1;
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    box-shadow: -29px 70px 10px rgba(0,0,0,0.36);
+    left: 52px;
+    top: 100px;
+    border-radius: 50%;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idext | stev_hgsn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="dev">Idext Web Compiler</h1>
+<div class="toolbar">
+    <input list="font-list" id="font" placeholder="Enter Font">
+    <!-- font list -->
+    <datalist id="font-list">
+        <option value="monospace">
+        <option value="harrington">
+        <option value="calibri">
+        <option value="arial">
+        <option value="Verdana">
+        <option value="sans-serif">
+        <option value="georgia">            
+        <option value="cursive">
+        <option value="serif">
+        <option value="system-ui">
+        <option value="fantasy">
+        <option value="">
+        <option value="">
+    </datalist>
+</div>
+    <div class="editor">
+        <textarea id="htmlCode" placeholder="Write HTML here"></textarea>
+        <textarea id="cssCode" placeholder="Write CSS here"></textarea>
+        <textarea id="jsCode" placeholder="Write JavaScript here"></textarea>
+    </div>
+    <div>
+        <button onclick="downloadFile()">Save</button>
+    </div>
+<Div>
+    <h3></h3>
+</Div>
+    <iframe id="outputFrame"></iframe>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+
+}
+
+.toolbar{
+    width: 80%;
+    margin: auto;
+    bottom: 10px;
+    background-color: rgba(249, 249, 249, 0.9);
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+textarea {
+    width: 30%;
+    height: 200px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+#outputFrame {
+    width: 90%;
+    height: 300px;
+    border: 1px solid #000;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dev{
+    font-family: arial black;
+}

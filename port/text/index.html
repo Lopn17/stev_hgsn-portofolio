@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notext | stev_hgsn</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="dev">Notext</div>
+    <div class="editor-container">
+        <div class="toolbar">
+            <label for="fileTitle">File Title: </label>
+            <input type="text" id="fileTitle" placeholder="Enter file title">
+            <button title="Bold: Ctrl + B" onclick="execCmd('bold')"><b>B</b></button>
+            <button title="Italic: Ctrl + I" onclick="execCmd('italic')" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><i>I</i></button>
+            <button title="Underline: Ctrl + U" onclick="execCmd('underline')"><u>U</u></button>
+            <select id="alignOptions" onchange="applyAlignment()" title="Align text"><!-- Align Dropdown -->
+                <option value="left" title="Ctrl + Shift + L">Left Align</option>
+                <option value="center" title="Ctrl + Shift + E">Center Align</option>
+                <option value="right"  title="Ctrl + Shift + R">Right Align</option>
+            </select>
+            <select id="capitalizeOptions" onchange="applyCapitalization()">  <!-- Capitalization Dropdown -->
+                <option value="none">Capital</option>
+                <option value="lowercase">lower case</option>
+                <option value="uppercase">UPPER CASE</option>
+                <option value="sentencecase">Sentence case</option>
+                <option value="capitalize">Capitalize Case</option>
+            </select>
+            <button onclick="p()">Paragraph</button>
+            <button title="Ctrl + Q" onclick="indent()">Indent</button>
+            <button onclick="execCmd('insertUnorderedList')">List</button>
+            <button onclick="execCmd('insertOrderedList')">Num List</button>
+            <button onclick="outdent()">Outdent</button>
+            <button onclick="execCmd('formatBlock', '<h1>')">H1</button>
+            <button onclick="execCmd('formatBlock', '<h2>')">H2</button>
+            <button onclick="execCmd('formatBlock', '<h3>')">H3</button>
+            <button onclick="clearFormatting()" title="Ctrl + Shift + C" >Clear Format</button>
+            <button onclick="execCmd('undo')" title="Undo: Ctrl + Z"><</button>
+            <button onclick="execCmd('redo')" title="Redo: Ctrl + Y">></button>
+            <button onclick="saveDoc()">Save as Word</button>
+            <button onclick="savePdf()">Save as PDF</button>
+            <button onclick="saveTxt()">Save as TXT</button>
+        </div>
+         <div id="editor" contenteditable="true"></div>
+        <div class="diev"> &copy; stev_hgsn</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
